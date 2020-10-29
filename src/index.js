@@ -17,6 +17,7 @@ function component() {
     btn.innerHTML ='click me'
     element.innerHTML = _.join(['Hello,webpack'],' ')
     element.appendChild(br)
+    
     element.appendChild(btn)
     btn.onclick = e=>import(/* webpackChunkName: "print" */ './print').then(module=>{
         let print = module.default;
