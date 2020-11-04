@@ -12,7 +12,9 @@ function component() {
 //     //     '5 cubed is equal to ' + cube(5)
 //     // ].join('\n\n')
 //     // return element
+
     let btn = document.createElement('button')
+    
     let br = document.createElement('br')
     btn.innerHTML ='click me'
     element.innerHTML = _.join(['Hello,webpack'],' ')
